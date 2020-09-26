@@ -15,7 +15,7 @@ export class Challenge4 extends Component {
         return (
             <div>
             
-                {this.state.clicked ? "Button Clicked" : <button onClick={this.hello}>Click Me </button>  }
+                {this.state.clicked ? <h1 className="text">Button Clicked</h1> : <button id="button" onClick={this.hello}>Click Me </button>  }
             </div>
         )
     }
