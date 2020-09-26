@@ -2,11 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Challenge4 from "./Challenge4"
 import * as serviceWorker from './serviceWorker';
 function tick() {
   const element = (
     <div>
       <h2>the time now is {new Date().toLocaleTimeString()}</h2>
+      <Challenge4 />
     </div>
   );
 
