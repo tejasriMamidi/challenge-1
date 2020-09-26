@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
+import CClock from './CClock';
+import Clock from "./Clock"
 
 function App() {
   const JsxElement = "I am a JSX element!";
@@ -8,6 +10,7 @@ function App() {
     icecream:20
 
   })
+ 
 const giveNumber =(bakery)=>{
    return bakery.cake + bakery.icecream
 }
@@ -18,12 +21,13 @@ const giveNumber =(bakery)=>{
    const name ="TejasriMamidi";
   return (
     <div className="App">
+                  <CClock />
+               <Clock/>
           <div>{JsxElement}{JsxWithChild}</div>
     <div className="Hi">I am a div tag with class name as Hi.</div>
   <div>I am {name}</div>
   <div>Total number of cakes and icecreams in this bakery:{giveNumber(bakery)}</div>
     </div>
-  );
-}
+  )}
 
 export default App;
